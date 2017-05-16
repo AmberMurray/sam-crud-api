@@ -12,7 +12,9 @@ What is listener?
 What is port?  
 PORT is a property we set inside the environment variable. process.env is something generic to express.  
 
-app.use('/artists', artists) - the /artists part is the prefix for the url  
+app.use('/artists', artists) - the /artists part is the prefix for the url
+
+bodyParser is the thing that puts everything inside req.body 
 
 
 # MVC   
@@ -57,3 +59,7 @@ this file is for us to use knex at the command line
 # Connection
 
 process.env.NODE_ENV || 'development': if process.env.NODE_ENV is not defined it will default to development (HEROKU sets process.env...FYI)
+
+# Models artist.js  
+What type of thing is returned from getAll? --A promise
+If you want to get data out of a promise, you have to call .then() on it!!!

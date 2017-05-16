@@ -4,6 +4,9 @@ const ctrl = require('../controllers/artists')
 
 
 router.get('/', ctrl.getAll)
+router.get('/:id', ctrl.getOne)
+router.delete('/:id', ctrl.destroy)
+router.post('/', ctrl.create)
 
 
 
