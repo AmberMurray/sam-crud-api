@@ -24,6 +24,7 @@ const update = (req, res) => {
   let body = {
     id: req.params.id,
     name: req.body.name,
+    pic_url: req.body.pic_url
   }
   Collection.update(body).then(([collection]) => {
     res.json(collection)
@@ -36,8 +37,6 @@ const destroy = (req, res) => {
     res.json( collection )
   })
 }
-
-
 
 
 module.exports = { getAll, getOne, create, update, destroy }

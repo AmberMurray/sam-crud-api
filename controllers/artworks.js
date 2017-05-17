@@ -26,7 +26,8 @@ const update = (req, res) => {
     artist_id: req.body.artist_id,
     title: req.body.title,
     yr_created: req.body.yr_created,
-    type: req.body.type
+    type: req.body.type,
+    pic_url: req.body.pic_url
   }
   Artwork.update(body).then(([artwork]) => {
     res.json(artwork)

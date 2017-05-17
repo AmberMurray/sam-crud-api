@@ -12,8 +12,8 @@ class Collection {
   }
 
 //using destructuring here to validate code coming into the create request
-  static create ({ name }) {
-    const artist = { name }
+  static create ({ name,pic_url }) {
+    const artist = { name, pic_url }
     return db('collections').insert(artist).returning('*')
   }
 

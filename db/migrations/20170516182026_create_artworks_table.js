@@ -5,6 +5,7 @@ exports.up = (knex, Promise) => {
     table.string('title')
     table.string('yr_created')
     table.string('type')
+    table.string('pic_url')
     table.timestamps(true, true)
   })
 }

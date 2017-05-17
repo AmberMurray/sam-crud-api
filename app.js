@@ -8,16 +8,13 @@ const artworks = require('./routes/artworks')
 const collections = require('./routes/collections')
 
 //bodyParser goes here so that the routes can use it
-app.use(bodyParser.json())
+app.use(require('body-parser').json())
+app.use(require('morgan')('dev'))
+app.use(require('knex-logger')(require('./db')))
 
 app.use('/artists', artists)
 app.use('/artworks', artworks)
 app.use('/collections', collections)
-
-
-
-
-
 
 
 
