@@ -7,21 +7,33 @@ exports.seed = (knex, Promise) => {
     return knex('artists').insert([
       {
         id: 1,
-        first_name: 'vince',
-        last_name: 'v-gooh',
-        nationality: 'earth'
+        first_name: 'Vince',
+        last_name: 'V-gooh',
+        nationality: 'Earth'
       },
       {
         id: 2,
-        first_name: 'edward',
-        last_name: 'hawk-eye-hawking',
-        nationality: 'california'
+        first_name: 'Edward',
+        last_name: 'Hawkeye Hawking',
+        nationality: 'California'
       },
       {
         id: 3,
-        first_name: 'grafitti',
-        last_name: 'banksey',
-        nationality: 'rollerskate'
+        first_name: 'Grafitti',
+        last_name: 'Banksey',
+        nationality: 'Rollerskate'
+      },
+      {
+        id: 4,
+        first_name: 'Bill',
+        last_name: 'Murray',
+        nationality: 'USA'
+      },
+      {
+        id: 5,
+        first_name: 'Howie',
+        last_name: 'Monet',
+        nationality: 'France'
       }
     ])
   })

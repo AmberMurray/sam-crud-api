@@ -1,8 +1,11 @@
+exports.up = (knex, Promise) => {
+  return knex.schema.createTable('collections', (table) => {
+    table.increments()
+    table.string('name')
+    table.timestamps(true, true)
+  })
+}
 
-exports.up = function(knex, Promise) {
-  
-};
-
-exports.down = function(knex, Promise) {
-  
-};
+exports.down = (knex, Promise) => {
+  return knex.schema.dropTable('collections')
+}
