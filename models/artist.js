@@ -26,13 +26,6 @@ class Artist {
     return db('artists').where({ id }).del().returning('*')
   }
 
-
-
-
-
 }
-
-
-
 
 module.exports = Artist
